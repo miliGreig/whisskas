@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Versión single-file: imágenes embebidas para que no se rompan en la vista previa. -->
+<title>Whiskas — Inicio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div id="homePage" class="single-view active-view">
+  <section class="hero" id="inicio">
+    <nav>
+      <a class="logo" href="index.html" aria-label="Ir a la página de inicio"><img src="assets/images/img_018_23b6d02a2f97.png" alt="Whiskas" /></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html" data-spa-route="products">Productos</a></li>
+        <li><a href="bienestar.html" data-spa-route="bienestar">Bienestar</a></li>
+        <li><a href="nosotros.html" data-spa-route="nosotros">Nosotros</a></li>
+        <li><a href="preguntas.html" data-spa-route="preguntas">Preguntas</a></li>
+      </ul>
+    </nav>
+
+    <div class="stage" id="stage">
+      <div class="orbit-system" id="orbitSystem">
+        <div class="glow"></div>
+        <div class="orbit-ring" id="orbitRing"></div>
+        <div class="orbit-ring-secondary"></div>
+
+        <div class="cat">
+          <img src="assets/images/img_019_fb6a75d618ec.png" alt="Gato naranja Whiskas" />
+        </div>
+      </div>
+
+      <div class="hint">Pasa el cursor para detener · arrastra para girar</div>
+    </div>
+  </section>
+
+
+  <section class="home-access" aria-label="Accesos principales">
+    <div class="home-access-inner">
+      <h2 class="home-access-title">Seguí explorando</h2>
+      <p class="home-access-subtitle">Encontrá consejos para cuidar a tu gato o resolvé tus dudas frecuentes.</p>
+
+      <div class="access-grid">
+        <a class="access-card" href="bienestar.html" data-spa-route="bienestar" aria-label="Ir a la página de Bienestar">
+          <div class="access-card-image" aria-hidden="true"></div>
+          <div class="access-card-content">
+            <h3 class="access-card-title">Bienestar felino</h3>
+            <span class="access-card-arrow" aria-hidden="true">→</span>
+          </div>
+        </a>
+
+        <a class="access-card" href="preguntas.html" data-spa-route="preguntas" aria-label="Ir a la página de Preguntas">
+          <div class="access-card-image" aria-hidden="true"></div>
+          <div class="access-card-content">
+            <h3 class="access-card-title">Preguntas frecuentes</h3>
+            <span class="access-card-arrow" aria-hidden="true">→</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="footer-logo" href="#inicio" aria-label="Volver al inicio"><img src="assets/images/img_018_23b6d02a2f97.png" alt="Whiskas" /></a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Productos</h3>
+          <ul>
+            <li><a href="productos.html">Alimento seco</a></li>
+            <li><a href="productos.html">Alimento húmedo</a></li>
+            <li><a href="productos.html">Snacks y premios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Conocenos</h3>
+          <ul>
+            <li><a href="nosotros.html">Sobre Whiskas</a></li>
+            <li><a href="bienestar.html">Bienestar felino</a></li>
+            <li><a href="nosotros.html">Sustentabilidad</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Ayuda</h3>
+          <ul>
+            <li><a href="preguntas.html" data-spa-route="preguntas">Preguntas frecuentes</a></li>
+            <li><a href="preguntas.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Mars o afiliadas. Todos los derechos reservados.</p>
+        <a class="footer-chat" href="preguntas.html">chat ia</a>
+        <div class="footer-legal">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  </div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
