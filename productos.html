@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Versión single-file: imágenes embebidas para que no se rompan en la vista previa. -->
+<title>Whiskas — Productos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<section id="spaProductsPage" class="single-view spa-page active-view">
+
+    <nav class="spa-top-nav">
+      <a class="logo" href="index.html" data-spa-route="home" aria-label="Ir a la página de inicio"><img src="assets/images/img_018_23b6d02a2f97.png" alt="Whiskas" /></a>
+      <ul class="spa-nav-links">
+        <li><a href="index.html" data-spa-route="home" class="">Inicio</a></li>
+        <li><a href="productos.html" data-spa-route="products" class="active">Productos</a></li>
+        <li><a href="bienestar.html" data-spa-route="bienestar" class="">Bienestar</a></li>
+        <li><a href="nosotros.html" data-spa-route="nosotros" class="">Nosotros</a></li>
+        <li><a href="preguntas.html" data-spa-route="preguntas" class="">Preguntas</a></li>
+        <li><a class="cart-link" href="carrito.html" data-spa-route="cart" aria-label="Ir al carrito">🛒<span class="cart-count" aria-label="Cantidad de productos en el carrito">0</span></a></li>
+      </ul>
+    </nav>
+    <section class="spa-products-wrap">
+      <header class="spa-products-header">
+        <h1 class="spa-products-title">
+          <span class="spa-title-mark">⌯</span>
+          Nuestros <span>Productos</span>
+          <span class="spa-title-mark">⌯</span>
+        </h1>
+        <p class="spa-products-subtitle">Encontrá la alimentación perfecta para tu gato</p>
+      </header>
+
+
+      <section class="spa-filters-panel" aria-label="Filtros de productos">
+        <div class="spa-filters-title">
+          <h2>Filtrar por <span>características</span></h2>
+          <div class="spa-filter-count" id="spaFilterCount">Mostrando todos</div>
+        </div>
+
+        <div class="spa-filters-grid">
+          <div class="spa-filter-group">
+            <label for="filterTipo">Tipo</label>
+            <select id="filterTipo" class="spa-filter-select" data-filter-field="tipo">
+              <option value="all">Todos</option>
+              <option value="seco">Alimento seco</option>
+              <option value="humedo">Alimento húmedo</option>
+              <option value="snack">Snack & premio</option>
+            </select>
+          </div>
+
+          <div class="spa-filter-group">
+            <label for="filterEtapa">Etapa</label>
+            <select id="filterEtapa" class="spa-filter-select" data-filter-field="etapa">
+              <option value="all">Todas</option>
+              <option value="adulto">Adulto +1 año</option>
+              <option value="gatito">Gatitos</option>
+            </select>
+          </div>
+
+          <div class="spa-filter-group">
+            <label for="filterSabor">Sabor</label>
+            <select id="filterSabor" class="spa-filter-select" data-filter-field="sabor">
+              <option value="all">Todos</option>
+              <option value="pollo">Pollo</option>
+              <option value="carne">Carne</option>
+              <option value="pescado">Pescado</option>
+              <option value="salmon">Salmón</option>
+              <option value="mix">Mix</option>
+            </select>
+          </div>
+
+          <div class="spa-filter-group">
+            <label for="filterPresentacion">Presentación</label>
+            <select id="filterPresentacion" class="spa-filter-select" data-filter-field="presentacion">
+              <option value="all">Todas</option>
+              <option value="chico">Chica / individual</option>
+              <option value="mediano">Mediana</option>
+              <option value="grande">Bolsa grande</option>
+            </select>
+          </div>
+
+          <button class="spa-filter-reset" id="spaFilterReset" type="button">Limpiar filtros</button>
+        </div>
+
+        <div class="spa-filter-empty" id="spaFilterEmpty">
+          No encontramos productos con esos filtros. Probá cambiando alguna característica.
+        </div>
+      </section>
+
+      <div class="spa-products-grid">
+        <article class="spa-product-card" data-spa-open-product="whiskas-adulto-pollo">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Seco</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-adulto-pollo" data-product-name="Whiskas Adulto Pollo" data-product-price="$2790" aria-label="Agregar Whiskas Adulto Pollo al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_005_03ab9717a3f6.webp" alt="Whiskas Adulto Pollo" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Adulto Pollo</h2>
+              <p class="spa-product-detail">Alimento seco • 1.5 kg</p>
+              <div class="spa-rating">★★★★★ <small>(287)</small></div>
+            </div>
+            <strong class="spa-price">$2790</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-adulto-carne">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Seco</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-adulto-carne" data-product-name="Whiskas Adulto Carne" data-product-price="$3090" aria-label="Agregar Whiskas Adulto Carne al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_006_a23417c2a92b.webp" alt="Whiskas Adulto Carne" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Adulto Carne</h2>
+              <p class="spa-product-detail">Alimento seco • 1.5 kg</p>
+              <div class="spa-rating">★★★★★ <small>(312)</small></div>
+            </div>
+            <strong class="spa-price">$3090</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-pate-pescado">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Húmedo</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-pate-pescado" data-product-name="Whiskas Paté Pescado" data-product-price="$3250" aria-label="Agregar Whiskas Paté Pescado al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_007_52aa7dc3c646.webp" alt="Whiskas Pate Pescado" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Paté Pescado</h2>
+              <p class="spa-product-detail">Alimento húmedo • 85 g</p>
+              <div class="spa-rating">★★★★★ <small>(198)</small></div>
+            </div>
+            <strong class="spa-price">$3250</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-pate-pollo">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Húmedo</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-pate-pollo" data-product-name="Whiskas Paté Pollo" data-product-price="$3590" aria-label="Agregar Whiskas Paté Pollo al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_008_2dfc8c3d5573.webp" alt="Whiskas Pate Pollo" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Paté Pollo</h2>
+              <p class="spa-product-detail">Alimento húmedo • 85 g</p>
+              <div class="spa-rating">★★★★★ <small>(245)</small></div>
+            </div>
+            <strong class="spa-price">$3590</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-junior-gatito">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Gatito</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-junior-gatito" data-product-name="Whiskas Junior Gatito" data-product-price="$4190" aria-label="Agregar Whiskas Junior Gatito al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_009_5ffdaca274e0.webp" alt="Whiskas Junior Gatito" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Junior Gatito</h2>
+              <p class="spa-product-detail">Alimento seco • 500 g</p>
+              <div class="spa-rating">★★★★★ <small>(332)</small></div>
+            </div>
+            <strong class="spa-price">$4190</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-sticks-premio">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Snack</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-sticks-premio" data-product-name="Whiskas Sticks Premio" data-product-price="$4890" aria-label="Agregar Whiskas Sticks Premio al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_010_751b306b33ff.webp" alt="Whiskas Sticks Premio" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Sticks Premio</h2>
+              <p class="spa-product-detail">Snack &amp; premio • Pack x5</p>
+              <div class="spa-rating">★★★★★ <small>(276)</small></div>
+            </div>
+            <strong class="spa-price">$4890</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-adulto-pescado">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Seco</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-adulto-pescado" data-product-name="Whiskas Adulto Pescado" data-product-price="$2990" aria-label="Agregar Whiskas Adulto Pescado al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_011_f881f26643ab.webp" alt="Whiskas Adulto Pescado" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Adulto Pescado</h2>
+              <p class="spa-product-detail">Alimento seco • 1.5 kg</p>
+              <div class="spa-rating">★★★★★ <small>(221)</small></div>
+            </div>
+            <strong class="spa-price">$2990</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-mix-carnes">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Seco</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-mix-carnes" data-product-name="Whiskas Mix de Carnes" data-product-price="$8990" aria-label="Agregar Whiskas Mix de Carnes al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_012_5e550eaa727c.webp" alt="Whiskas Mix Carnes" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Mix de Carnes</h2>
+              <p class="spa-product-detail">Alimento seco • 10 kg</p>
+              <div class="spa-rating">★★★★★ <small>(356)</small></div>
+            </div>
+            <strong class="spa-price">$8990</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-pollo-10kg">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Seco</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-pollo-10kg" data-product-name="Whiskas Pollo 10 kg" data-product-price="$9290" aria-label="Agregar Whiskas Pollo 10 kg al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_013_4a900ce850a3.webp" alt="Whiskas Pollo 10Kg" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Pollo 10 kg</h2>
+              <p class="spa-product-detail">Alimento seco • 10 kg</p>
+              <div class="spa-rating">★★★★★ <small>(401)</small></div>
+            </div>
+            <strong class="spa-price">$9290</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-sobre-carne">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Húmedo</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-sobre-carne" data-product-name="Whiskas Sobre Carne" data-product-price="$1390" aria-label="Agregar Whiskas Sobre Carne al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_014_31407b87d2d3.webp" alt="Whiskas Sobre Carne" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Sobre Carne</h2>
+              <p class="spa-product-detail">Alimento húmedo • 85 g</p>
+              <div class="spa-rating">★★★★★ <small>(174)</small></div>
+            </div>
+            <strong class="spa-price">$1390</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-sobre-pollo">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Húmedo</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-sobre-pollo" data-product-name="Whiskas Sobre Pollo" data-product-price="$1390" aria-label="Agregar Whiskas Sobre Pollo al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_008_2dfc8c3d5573.webp" alt="Whiskas Sobre Pollo" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Sobre Pollo</h2>
+              <p class="spa-product-detail">Alimento húmedo • 85 g</p>
+              <div class="spa-rating">★★★★★ <small>(188)</small></div>
+            </div>
+            <strong class="spa-price">$1390</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-sobre-pescado">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Húmedo</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-sobre-pescado" data-product-name="Whiskas Sobre Pescado" data-product-price="$1490" aria-label="Agregar Whiskas Sobre Pescado al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_007_52aa7dc3c646.webp" alt="Whiskas Sobre Pescado" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Sobre Pescado</h2>
+              <p class="spa-product-detail">Alimento húmedo • 85 g</p>
+              <div class="spa-rating">★★★★★ <small>(204)</small></div>
+            </div>
+            <strong class="spa-price">$1490</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-gatito-pollo">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Gatito</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-gatito-pollo" data-product-name="Whiskas Gatito Pollo" data-product-price="$3790" aria-label="Agregar Whiskas Gatito Pollo al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_015_7f716e417557.webp" alt="Whiskas Gatito Pollo" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Gatito Pollo</h2>
+              <p class="spa-product-detail">Alimento seco • 1 kg</p>
+              <div class="spa-rating">★★★★★ <small>(263)</small></div>
+            </div>
+            <strong class="spa-price">$3790</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-premios-salmon">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Snack</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-premios-salmon" data-product-name="Whiskas Premios Salmón" data-product-price="$2590" aria-label="Agregar Whiskas Premios Salmón al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_016_7fe4c4b681c6.webp" alt="Whiskas Premios Salmon" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Premios Salmón</h2>
+              <p class="spa-product-detail">Snack &amp; premio • 60 g</p>
+              <div class="spa-rating">★★★★★ <small>(149)</small></div>
+            </div>
+            <strong class="spa-price">$2590</strong>
+          </div>
+        </article>
+        <article class="spa-product-card" data-spa-open-product="whiskas-bocaditos-mix">
+          <div class="spa-product-visual">
+            <span class="spa-badge">Snack</span>
+            <button class="spa-card-cart-btn" type="button" data-spa-add-cart data-product-id="whiskas-bocaditos-mix" data-product-name="Whiskas Bocaditos Mix" data-product-price="$2890" aria-label="Agregar Whiskas Bocaditos Mix al carrito">🛒</button>
+            <img class="spa-product-img" src="assets/images/img_017_0139621d80c2.webp" alt="Whiskas Bocaditos Mix" loading="lazy" />
+          </div>
+          <div class="spa-product-info">
+            <div>
+              <h2 class="spa-product-name">Whiskas Bocaditos Mix</h2>
+              <p class="spa-product-detail">Snack &amp; premio • 75 g</p>
+              <div class="spa-rating">★★★★★ <small>(167)</small></div>
+            </div>
+            <strong class="spa-price">$2890</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="site-footer spa-shared-footer">
+      <div class="site-footer-inner">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="footer-logo" href="index.html" data-spa-route="home" aria-label="Volver al inicio"><img src="assets/images/img_018_23b6d02a2f97.png" alt="Whiskas" /></a>
+          </div>
+
+          <div class="footer-col">
+            <h3>Productos</h3>
+            <ul>
+              <li><a data-spa-route="products">Alimento seco</a></li>
+              <li><a data-spa-route="products">Alimento húmedo</a></li>
+              <li><a data-spa-route="products">Snacks y premios</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Conocenos</h3>
+            <ul>
+              <li><a data-spa-route="nosotros">Sobre Whiskas</a></li>
+              <li><a data-spa-route="bienestar">Bienestar felino</a></li>
+              <li><a data-spa-route="nosotros">Sustentabilidad</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Ayuda</h3>
+            <ul>
+              <li><a data-spa-route="preguntas">Preguntas frecuentes</a></li>
+              <li><a data-spa-route="preguntas">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 Mars o afiliadas. Todos los derechos reservados.</p>
+          <a class="footer-chat">chat ia</a>
+          <div class="footer-legal">
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+<section id="spaDetailPage" class="single-view spa-page">
+
+    <nav class="spa-top-nav">
+      <a class="logo" href="index.html" data-spa-route="home" aria-label="Ir a la página de inicio"><img src="assets/images/img_018_23b6d02a2f97.png" alt="Whiskas" /></a>
+      <ul class="spa-nav-links">
+        <li><a href="index.html" data-spa-route="home" class="">Inicio</a></li>
+        <li><a href="productos.html" data-spa-route="products" class="active">Productos</a></li>
+        <li><a href="bienestar.html" data-spa-route="bienestar" class="">Bienestar</a></li>
+        <li><a href="nosotros.html" data-spa-route="nosotros" class="">Nosotros</a></li>
+        <li><a href="preguntas.html" data-spa-route="preguntas" class="">Preguntas</a></li>
+        <li><a class="cart-link" href="carrito.html" data-spa-route="cart" aria-label="Ir al carrito">🛒<span class="cart-count" aria-label="Cantidad de productos en el carrito">0</span></a></li>
+      </ul>
+    </nav>
+    <section class="spa-detail-wrap" id="spaDetailContent"></section>
+
+    <footer class="site-footer spa-shared-footer">
+      <div class="site-footer-inner">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="footer-logo" href="index.html" data-spa-route="home" aria-label="Volver al inicio"><img src="assets/images/img_018_23b6d02a2f97.png" alt="Whiskas" /></a>
+          </div>
+
+          <div class="footer-col">
+            <h3>Productos</h3>
+            <ul>
+              <li><a data-spa-route="products">Alimento seco</a></li>
+              <li><a data-spa-route="products">Alimento húmedo</a></li>
+              <li><a data-spa-route="products">Snacks y premios</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Conocenos</h3>
+            <ul>
+              <li><a data-spa-route="nosotros">Sobre Whiskas</a></li>
+              <li><a data-spa-route="bienestar">Bienestar felino</a></li>
+              <li><a data-spa-route="nosotros">Sustentabilidad</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Ayuda</h3>
+            <ul>
+              <li><a data-spa-route="preguntas">Preguntas frecuentes</a></li>
+              <li><a data-spa-route="preguntas">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 Mars o afiliadas. Todos los derechos reservados.</p>
+          <a class="footer-chat">chat ia</a>
+          <div class="footer-legal">
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

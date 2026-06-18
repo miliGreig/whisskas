@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Versión single-file: imágenes embebidas para que no se rompan en la vista previa. -->
+<title>Whiskas — Bienestar</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<section id="spaBienestarPage" class="single-view spa-page active-view">
+
+    <nav class="spa-top-nav">
+      <a class="logo" href="index.html" data-spa-route="home" aria-label="Ir a la página de inicio"><img src="assets/images/img_018_23b6d02a2f97.png" alt="Whiskas" /></a>
+      <ul class="spa-nav-links">
+        <li><a href="index.html" data-spa-route="home" class="">Inicio</a></li>
+        <li><a href="productos.html" data-spa-route="products" class="">Productos</a></li>
+        <li><a href="bienestar.html" data-spa-route="bienestar" class="active">Bienestar</a></li>
+        <li><a href="nosotros.html" data-spa-route="nosotros" class="">Nosotros</a></li>
+        <li><a href="preguntas.html" data-spa-route="preguntas" class="">Preguntas</a></li>
+        <li><a class="cart-link" href="carrito.html" data-spa-route="cart" aria-label="Ir al carrito">🛒<span class="cart-count" aria-label="Cantidad de productos en el carrito">0</span></a></li>
+      </ul>
+    </nav>
+    <!-- BIENESTAR HERO BANNER -->
+    <div class="bw-hero">
+      <div class="bw-hero-inner">
+        <h1 class="bw-hero-title">Todo lo que<br>tu gato necesita</h1>
+        <p class="bw-hero-sub">Consejos de expertos para que viva sano, feliz y lleno de energía.</p>
+      </div>
+      <div class="bw-hero-cat" aria-hidden="true">
+        <img src="" alt="" class="bw-hero-cat-img" />
+      </div>
+      <div class="bw-hero-deco" aria-hidden="true"></div>
+    </div>
+
+    <!-- GRID DE 6 CARDS -->
+    <div class="bw-section">
+      <div class="bw-grid">
+
+        <!-- Card 1: Alimentación -->
+        <div class="bw-card" data-bw-index="0">
+          <div class="bw-card-img-wrap">
+            <img class="bw-card-img" src="assets/images/img_020_5d4ebd663dd9.webp" alt="Gato comiendo alimento en su plato" loading="lazy" />
+            <span class="bw-card-badge">Alimentación</span>
+          </div>
+          <div class="bw-card-body">
+            <h2 class="bw-card-title">Alimentación equilibrada</h2>
+            <p class="bw-card-desc">La nutrición es la base de una vida larga y saludable.</p>
+            <div class="bw-accordion">
+              <button class="bw-acc-btn" aria-expanded="false">
+                <span>Ver consejos</span>
+                <span class="bw-acc-icon">+</span>
+              </button>
+              <div class="bw-acc-body">
+                <div class="bw-acc-inner">
+                  <ul class="bw-tip-list">
+                    <li>🕐 <strong>Horarios fijos:</strong> establecé 2 o 3 comidas al día a la misma hora.</li>
+                    <li>💧 <strong>Hidratación:</strong> asegurate de que siempre tenga agua fresca disponible.</li>
+                    <li>⚖️ <strong>Porciones:</strong> respetá las cantidades según peso y edad para evitar la obesidad.</li>
+                    <li>🚫 <strong>Evitá:</strong> cebolla, ajo, uvas, chocolate y lácteos; son tóxicos para los gatos.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Higiene -->
+        <div class="bw-card" data-bw-index="1">
+          <div class="bw-card-img-wrap">
+            <img class="bw-card-img" src="assets/images/img_021_bb81c334f3a5.webp" alt="Gato siendo cepillado" loading="lazy" />
+            <span class="bw-card-badge">Higiene</span>
+          </div>
+          <div class="bw-card-body">
+            <h2 class="bw-card-title">Higiene y aseo</h2>
+            <p class="bw-card-desc">Un gato limpio es un gato feliz. ¡Y vos también lo agradecés!</p>
+            <div class="bw-accordion">
+              <button class="bw-acc-btn" aria-expanded="false">
+                <span>Ver consejos</span>
+                <span class="bw-acc-icon">+</span>
+              </button>
+              <div class="bw-acc-body">
+                <div class="bw-acc-inner">
+                  <ul class="bw-tip-list">
+                    <li>🪮 <strong>Cepillado:</strong> cepillá a tu gato 2-3 veces por semana para evitar bolas de pelo.</li>
+                    <li>🦷 <strong>Dientes:</strong> cepillá sus dientes o usá snacks dentales para prevenir el sarro.</li>
+                    <li>👂 <strong>Oídos:</strong> revisalos semanalmente y limpialos con un paño suave si hay suciedad.</li>
+                    <li>✂️ <strong>Uñas:</strong> cortá las uñas cada 2-3 semanas para evitar que se enreden.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Salud preventiva -->
+        <div class="bw-card" data-bw-index="2">
+          <div class="bw-card-img-wrap">
+            <img class="bw-card-img" src="assets/images/img_022_408b249d7dd9.webp" alt="Gato en consulta veterinaria" loading="lazy" />
+            <span class="bw-card-badge">Salud</span>
+          </div>
+          <div class="bw-card-body">
+            <h2 class="bw-card-title">Salud preventiva</h2>
+            <p class="bw-card-desc">Prevenir es siempre mejor (y más barato) que curar.</p>
+            <div class="bw-accordion">
+              <button class="bw-acc-btn" aria-expanded="false">
+                <span>Ver consejos</span>
+                <span class="bw-acc-icon">+</span>
+              </button>
+              <div class="bw-acc-body">
+                <div class="bw-acc-inner">
+                  <ul class="bw-tip-list">
+                    <li>💉 <strong>Vacunas:</strong> cumplí el calendario de vacunación anual indicado por tu vet.</li>
+                    <li>🔬 <strong>Chequeos:</strong> una visita al veterinario cada 6 meses detecta problemas a tiempo.</li>
+                    <li>🐛 <strong>Antiparasitarios:</strong> desparasitá de forma interna y externa cada 3 meses.</li>
+                    <li>🏥 <strong>Castración:</strong> reduce el riesgo de enfermedades y mejora su calidad de vida.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Prevención de enfermedades -->
+        <div class="bw-card" data-bw-index="3">
+          <div class="bw-card-img-wrap">
+            <img class="bw-card-img" src="assets/images/img_023_d921ef514ab8.webp" alt="Gato descansando" loading="lazy" />
+            <span class="bw-card-badge">Prevención</span>
+          </div>
+          <div class="bw-card-body">
+            <h2 class="bw-card-title">Señales de alerta</h2>
+            <p class="bw-card-desc">Conocé los síntomas que no hay que ignorar nunca.</p>
+            <div class="bw-accordion">
+              <button class="bw-acc-btn" aria-expanded="false">
+                <span>Ver consejos</span>
+                <span class="bw-acc-icon">+</span>
+              </button>
+              <div class="bw-acc-body">
+                <div class="bw-acc-inner">
+                  <ul class="bw-tip-list">
+                    <li>😿 <strong>Cambios de ánimo:</strong> si está muy apagado o irritable, consultá al vet.</li>
+                    <li>🍽️ <strong>Sin apetito:</strong> más de 24 hs sin comer es motivo de consulta urgente.</li>
+                    <li>🚽 <strong>Orina:</strong> sangre, esfuerzo o poca frecuencia pueden indicar problemas renales.</li>
+                    <li>👁️ <strong>Ojos y nariz:</strong> secreciones amarillas o verdes son señal de infección.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Ejercicio y juego -->
+        <div class="bw-card" data-bw-index="4">
+          <div class="bw-card-img-wrap">
+            <img class="bw-card-img" src="assets/images/img_024_fc8ce6e24211.webp" alt="Gatos jugando con un juguete" loading="lazy" />
+            <span class="bw-card-badge">Ejercicio</span>
+          </div>
+          <div class="bw-card-body">
+            <h2 class="bw-card-title">Ejercicio y juego</h2>
+            <p class="bw-card-desc">Un gato activo es un gato sano. El juego es esencial.</p>
+            <div class="bw-accordion">
+              <button class="bw-acc-btn" aria-expanded="false">
+                <span>Ver consejos</span>
+                <span class="bw-acc-icon">+</span>
+              </button>
+              <div class="bw-acc-body">
+                <div class="bw-acc-inner">
+                  <ul class="bw-tip-list">
+                    <li>🎾 <strong>Juego diario:</strong> dedicá al menos 15 minutos de juego activo por día.</li>
+                    <li>🧸 <strong>Variedad:</strong> rotá los juguetes para mantener su curiosidad activa.</li>
+                    <li>🌿 <strong>Enriquecimiento:</strong> rascadores, túneles y plataformas estimulan su instinto.</li>
+                    <li>🏃 <strong>Obesidad:</strong> el juego regular previene el sobrepeso y sus consecuencias.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Bienestar emocional -->
+        <div class="bw-card" data-bw-index="5">
+          <div class="bw-card-img-wrap">
+            <img class="bw-card-img" src="assets/images/img_025_62648081874d.webp" alt="Gato con su dueña" loading="lazy" />
+            <span class="bw-card-badge">Emoción</span>
+          </div>
+          <div class="bw-card-body">
+            <h2 class="bw-card-title">Bienestar emocional</h2>
+            <p class="bw-card-desc">Los gatos también sienten estrés. Tu compañía es clave.</p>
+            <div class="bw-accordion">
+              <button class="bw-acc-btn" aria-expanded="false">
+                <span>Ver consejos</span>
+                <span class="bw-acc-icon">+</span>
+              </button>
+              <div class="bw-acc-body">
+                <div class="bw-acc-inner">
+                  <ul class="bw-tip-list">
+                    <li>🏠 <strong>Espacio propio:</strong> tener un lugar seguro y tranquilo reduce el estrés.</li>
+                    <li>🤝 <strong>Vínculos:</strong> el contacto físico afectivo fortalece la confianza.</li>
+                    <li>🔊 <strong>Ruido:</strong> evitá los ambientes muy ruidosos; les genera ansiedad.</li>
+                    <li>🐾 <strong>Rutinas:</strong> los gatos aman la previsibilidad; mantené horarios estables.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer spa-shared-footer">
+      <div class="site-footer-inner">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="footer-logo" href="index.html" data-spa-route="home" aria-label="Volver al inicio"><img src="assets/images/img_018_23b6d02a2f97.png" alt="Whiskas" /></a>
+          </div>
+
+          <div class="footer-col">
+            <h3>Productos</h3>
+            <ul>
+              <li><a data-spa-route="products">Alimento seco</a></li>
+              <li><a data-spa-route="products">Alimento húmedo</a></li>
+              <li><a data-spa-route="products">Snacks y premios</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Conocenos</h3>
+            <ul>
+              <li><a data-spa-route="nosotros">Sobre Whiskas</a></li>
+              <li><a data-spa-route="bienestar">Bienestar felino</a></li>
+              <li><a data-spa-route="nosotros">Sustentabilidad</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Ayuda</h3>
+            <ul>
+              <li><a data-spa-route="preguntas">Preguntas frecuentes</a></li>
+              <li><a data-spa-route="preguntas">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 Mars o afiliadas. Todos los derechos reservados.</p>
+          <a class="footer-chat">chat ia</a>
+          <div class="footer-legal">
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
